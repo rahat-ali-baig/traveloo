@@ -7,6 +7,11 @@ import Hero from "@/components/Hero";
 import ContentSection from "@/components/ContentSection";
 import Header from "@/components/Header";
 import FeaturesSection from "@/components/FeaturesSection";
+import HeroSection from "@/components/HeroSection";
+import SolutionSection from "@/components/SolutionSection";
+import ProblemShowcase from "@/components/ProblemShowcase";
+import HowItWorks from "@/components/HowItWorks";
+import TourGallery from "@/components/TourGallery";
 
 export default function Home() {
   const [loaderComplete, setLoaderComplete] = useState(false);
@@ -27,9 +32,13 @@ export default function Home() {
   return (
     <main className="w-full overflow-y-auto relative">
       <Header />
-      <Hero />
+      <HeroSection />
+      <ProblemShowcase />
+      <SolutionSection />
+      <HowItWorks />
+      {/* <Hero /> */}
+      {/* <TourGallery /> */}
       {/* <FeaturesSection /> */}
-      <ContentSection />
     </main>
   );
 }
