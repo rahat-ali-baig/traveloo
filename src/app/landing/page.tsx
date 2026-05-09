@@ -2,16 +2,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Loader from "@/components/Loader";
-import Hero from "@/components/Hero";
-import ContentSection from "@/components/ContentSection";
-import Header from "@/components/Header";
-import FeaturesSection from "@/components/FeaturesSection";
-import HeroSection from "@/components/HeroSection";
-import SolutionSection from "@/components/SolutionSection";
-import ProblemShowcase from "@/components/ProblemShowcase";
-import HowItWorks from "@/components/HowItWorks";
-import TourGallery from "@/components/TourGallery";
+import Loader from "@/components/core/Loader";
+import Header from "@/components/trash/Header";
+import HeroSection from "@/components/trash/HeroSection";
+import SolutionSection from "@/components/trash/SolutionSection";
+import ProblemShowcase from "@/components/trash/ProblemShowcase";
+import HowItWorks from "@/components/trash/HowItWorks";
 
 export default function Home() {
   const [loaderComplete, setLoaderComplete] = useState(false);
@@ -36,9 +32,6 @@ export default function Home() {
       <ProblemShowcase />
       <SolutionSection />
       <HowItWorks />
-      {/* <Hero /> */}
-      {/* <TourGallery /> */}
-      {/* <FeaturesSection /> */}
     </main>
   );
 }
