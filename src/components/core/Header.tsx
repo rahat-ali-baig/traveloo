@@ -116,7 +116,7 @@ const Header = () => {
                 </PrimaryButton>
 
                 <PrimaryButton
-                  onClick={() => router.push("/explore")}
+                  onClick={() => router.push("/home")}
                   className="h-10 cursor-pointer px-4! py-0! text-[0.75rem] xl:px-6! xl:text-[0.84rem]"
                 >
                   Start Exploring
@@ -178,7 +178,7 @@ const Header = () => {
             <div className="flex w-full items-center justify-center gap-3 pt-4">
               <PrimaryButton
                 onClick={() => {
-                  console.log("Sign In clicked");
+                  router.push('/login')
                   setMobileMenuOpen(false);
                 }}
                 className="px-4! py-2! text-sm"
@@ -191,7 +191,7 @@ const Header = () => {
               </PrimaryButton>
               <PrimaryButton
                 onClick={() => {
-                  router.push("/explore");
+                  router.push("/home");
                   setMobileMenuOpen(false);
                 }}
                 className="px-4! py-2! text-sm"

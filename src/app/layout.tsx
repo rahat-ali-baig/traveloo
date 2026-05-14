@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${poppins.variable} ${greatvibes.variable} h-full antialiased`}
     >
-      <body className="min-h-screen w-full bg-black">
+      <body className="min-h-screen w-full bg-black" suppressHydrationWarning>
         {children}
       </body>
     </html>

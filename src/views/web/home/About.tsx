@@ -49,7 +49,7 @@ const AboutSection = () => {
 
         <div className="flex flex-col justify-center gap-4">
           <p className="font-sans text-[clamp(0.9rem,1.5vw,1rem)] font-light leading-[1.75] text-white/60">
-            Pakistan's tourism industry runs on WhatsApp threads, handshake
+            Pakistan&apos;s tourism industry runs on WhatsApp threads, handshake
             deals, and word-of-mouth. For travellers, that means uncertainty.
             For tour operators, that means invisibility.
           </p>
@@ -69,7 +69,7 @@ const AboutSection = () => {
       {/* ── PILLARS ── */}
       <div className="w-full border-b border-t border-white/10 px-4 py-16 sm:px-6 md:px-8 lg:py-20">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {PILLARS.map((p, index) => (
+          {PILLARS.map((p) => (
             <div
               key={p.title}
               className="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/3 p-6 backdrop-blur-sm transition-all duration-500 hover:border-emerald-500/20 hover:bg-emerald-950/10 sm:p-7"

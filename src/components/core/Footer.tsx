@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const COPYRIGHT_YEAR = 2026;
+
 const Footer = () => {
     return (
         <footer className="w-full relative overflow-hidden bg-[#010302] pt-20 pb-10">
@@ -80,7 +82,7 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-white/40 font-light">
-                    <p>&copy; {new Date().getFullYear()} Safarly. All rights reserved.</p>
+                    <p>&copy; {COPYRIGHT_YEAR} Safarly. All rights reserved.</p>
                     <div className="flex items-center gap-2">
                         <p>Made with</p>
                         <span className="text-emerald-500">♥</span>

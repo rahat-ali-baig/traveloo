@@ -9,14 +9,14 @@ const TRIPS = [
         operator: "Alpine Trekkers",
         days: 7,
         price: "Rs. 45,000",
-        image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f0a?q=80&w=600&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600&auto=format&fit=crop"
     },
     {
         title: "Fairy Meadows Trek",
         operator: "North Explore",
         days: 5,
         price: "Rs. 32,000",
-        image: "https://images.unsplash.com/photo-1589136777351-fdc9c9cb15f9?q=80&w=600&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600&auto=format&fit=crop"
     },
     {
         title: "Skardu Autumn Tour",
@@ -30,7 +30,7 @@ const TRIPS = [
         operator: "Valley Tours",
         days: 4,
         price: "Rs. 25,000",
-        image: "https://images.unsplash.com/photo-1626245089308-466d7bd49bd4?q=80&w=600&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600&auto=format&fit=crop"
     }
 ];
 
@@ -58,7 +58,13 @@ const TripsGallery = () => {
                         <div key={i} className={`group relative h-80 border-b border-white/10 ${i % 2 === 0 ? 'md:border-r' : ''} border-white/10 overflow-hidden cursor-pointer`}>
                             {/* Bg Image */}
                             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
-                                <Image src={trip.image} alt={trip.title} fill className="object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+                                <Image
+                                    src={trip.image}
+                                    alt={trip.title}
+                                    fill
+                                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 38vw"
+                                    className="object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+                                />
                                 <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
                             </div>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 
 const TEAM = [
     {
@@ -53,7 +53,13 @@ const SpotlightCard = ({ member, isActive }: { member: typeof TEAM[0], isActive:
             className={`group relative overflow-hidden rounded-[32px] border border-white/5 bg-[#0a0a0a] transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] cursor-pointer shadow-2xl h-[450px] md:h-[600px] w-full ${isActive ? 'opacity-100 grayscale-0 scale-100' : 'opacity-40 grayscale hover:opacity-60 scale-[0.98]'}`}
         >
             {/* Image fills the card */}
-            <Image src={member.img} alt={member.name} fill className="object-cover object-center transition-all duration-1000" />
+            <Image
+                src={member.img}
+                alt={member.name}
+                fill
+                sizes="(max-width: 1058px) 85vw, 900px"
+                className="object-cover object-center transition-all duration-1000"
+            />
             
             {/* Gradient Overlay for text readability */}
             <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
